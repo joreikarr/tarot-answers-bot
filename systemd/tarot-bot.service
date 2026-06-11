@@ -1,0 +1,17 @@
+[Unit]
+Description=Tarot Answer Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/tarot-bot
+EnvironmentFile=/opt/tarot-bot/.env
+ExecStart=/opt/tarot-bot/venv/bin/python -m tarot_answer_bot.main
+Restart=always
+RestartSec=5
+User=pi
+Group=pi
+
+[Install]
+WantedBy=multi-user.target
