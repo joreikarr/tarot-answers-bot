@@ -33,7 +33,7 @@ jobs:
     steps:
       - name: Update deployment
         run: |
-          cd /opt/tarot-bot
+          cd /mnt/storage/tarot-answers-bot
           git pull origin main
           source venv/bin/activate
           pip install -r requirements.txt
