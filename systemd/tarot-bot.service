@@ -5,9 +5,9 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-WorkingDirectory=/opt/tarot-bot
-EnvironmentFile=/opt/tarot-bot/.env
-ExecStart=/opt/tarot-bot/venv/bin/python -m tarot_answer_bot.main
+WorkingDirectory=/mnt/storage/tarot-answers-bot
+EnvironmentFile=/mnt/storage/tarot-answers-bot/.env
+ExecStart=/mnt/storage/tarot-answers-bot/venv/bin/python -m tarot_answer_bot.main
 Restart=always
 RestartSec=5
 User=pi
