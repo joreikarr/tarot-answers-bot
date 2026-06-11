@@ -52,7 +52,7 @@ python -m tarot_answer_bot.main
 
 Схема запуска на Raspberry Pi:
 
-1. Разместить проект, например, в `/opt/tarot-bot`.
+1. Разместить проект, например, в `/mnt/storage/tarot-answers-bot`.
 2. Создать виртуальное окружение.
 3. Установить зависимости.
 4. Скопировать unit-файл в `/etc/systemd/system/tarot-bot.service`.
